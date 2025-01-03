@@ -22,7 +22,7 @@ jobs:
         
     - name: Execute Maven Test
       run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
-    - name: Upload Logs
+    - name: Upload Test Logs
       if: always()
       uses: actions/upload-artifact@v4.5.0
       with:
